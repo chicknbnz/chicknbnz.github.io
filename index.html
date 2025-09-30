@@ -50,8 +50,8 @@ door.addEventListener('click', () => {
 
   // Redirect to YouTube in a new tab after the animation completes
   setTimeout(() => {
+    document.title = "Empty";
     window.open('https://www.chicknbnz.github.io/homepage.html', '_blank');
-    window.close();
   }, 2000); // Match the transition duration
 });
 </script>
