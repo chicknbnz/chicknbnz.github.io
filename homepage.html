@@ -1,7 +1,140 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicknbnz Homepage</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f8d7da, #e0aaff); /* Pastel gradient background */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white header */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            color: #c77dff; /* Muted purple */
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            padding: 20px;
+        }
+
+        .content {
+            flex: 2;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white content area */
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white sidebar */
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .link-box {
+            height: 200px;
+            overflow-y: scroll;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .link-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .link-box li {
+            margin-bottom: 5px;
+        }
+
+        .link-box a {
+            color: #80b918; /* Earthy green */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .link-box a:hover {
+            color: #c77dff; /* Muted purple on hover */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white footer */
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+
+            .content, .sidebar {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
 <body>
-  <title>Chicknbnz Homepage</title>
-  <header>Welcome to Chicknbnz Homepage!</header>
+
+    <header>
+        <h1>Chicknbnz Homepage</h1>
+    </header>
+
+    <main>
+        <div class="content">
+            <h2>Welcome!</h2>
+            <p>This is a sample homepage. You can replace this text with your own content. Feel free to add images, videos, and other multimedia elements to make your homepage more engaging.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <div class="sidebar">
+            <h3>Useful Links</h3>
+            <div class="link-box">
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">Link 5</a></li>
+                    <li><a href="#">Link 6</a></li>
+                    <li><a href="#">Link 7</a></li>
+                    <li><a href="#">Link 8</a></li>
+                    <li><a href="#">Link 9</a></li>
+                    <li><a href="#">Link 10</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Chicknbnz Homepage :3</p>
+    </footer>
+
 </body>
-  
 </html>
