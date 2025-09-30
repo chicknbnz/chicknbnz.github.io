@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Animated Door</title>
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.door-container {
+  position: relative;
+  width: 200px;
+  height: 300px;
+}
+
+.door {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 300px;
+  background-color: brown;
+  transform-origin: left;
+  transition: transform 2s ease-in-out; /* Animation duration and easing */
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.door.open {
+  transform: translateX(-100%) rotateY(-90deg); /* Rotate the door open */
+}
+</style>
+</head>
+<body>
+
+<div class="door-container">
+  <div class="door"></div>
+</div>
+
+<script>
+const door = document.querySelector('.door');
+
+door.addEventListener('click', () => {
+  door.classList.add('open');
+
+  // Redirect to YouTube in a new tab after the animation completes
+  setTimeout(() => {
+    window.open('https://www.youtube.com', '_blank');
+  }, 2000); // Match the transition duration
+});
+</script>
+
+</body>
+</html>
